@@ -14,7 +14,7 @@ int main()
     int product = std::accumulate(vec.begin(), vec.end(), 1, std::multiplies<int>());
 
     std::string str = std::accumulate(vec.begin(), vec.end(), std::string{},
-		                      [](const std::string& a, int b)
+                                      [](const std::string& a, int b)
                                       {
                                           return a.empty() ? std::to_string(b)
                                                  : a + "-" + std::to_string(b);

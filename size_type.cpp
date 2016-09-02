@@ -21,7 +21,7 @@ int main()
     for (std::size_t n = 0; n < N; ++n)
     {
         a[n] = n;
-    }	
+    }
         
     for (std::size_t n = N; n-- > 0;) // Reverse cycles are tricky for unsigned types.
     {
